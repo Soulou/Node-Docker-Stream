@@ -30,6 +30,5 @@ io.sockets.on 'connection', (s) ->
       streamToWebsocket(out, s)
       streamToWebsocket(err, s)
       docker.demuxStream attach, out, err
-      attach.pipe(out)
 
 server.listen(process.env.PORT || 3000)
