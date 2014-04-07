@@ -19,7 +19,6 @@ app.get '/', (req, res) ->
 
 streamToWebsocket = (stream, socket) ->
   stream._write = (chunk, enc, next) ->
-    console.log chunk
     socket.emit 'logs', {data: chunk.toString()}
     next()
 
