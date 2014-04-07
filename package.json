@@ -1,0 +1,20 @@
+{
+  "name": "DockerStream",
+  "version": "0.0.0",
+  "description": "Stream docker output to websocket",
+  "main": "index.coffee",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "docker.io": "^0.9.8",
+    "socket.io": "^0.9.16",
+    "express": "^3.5.1",
+    "coffee": "0.0.1",
+    "connect-assets": "^3.0.0-beta2",
+    "jade": "^1.3.1",
+    "coffee-script": "^1.7.1"
+  }
+}
