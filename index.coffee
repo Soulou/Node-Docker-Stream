@@ -16,7 +16,6 @@ app.get '/', (req, res) ->
   docker.containers.list (err, containers) ->
     res.render 'index.jade', {container: containers[0].Id.substring(0, 10)}
 
-
 streamToWebsocket = (stream, socket) ->
   stream._write = (chunk, enc, next) ->
     socket.emit 'logs', {data: chunk.toString()}
